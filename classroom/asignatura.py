@@ -5,4 +5,5 @@ class Asignatura:
         self._salon = salon
 
     def __str__(self):
-        cadena=self._nombre+
+        cadena=self._nombre++self._salon
+        return cadena
