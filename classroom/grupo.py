@@ -15,8 +15,11 @@ class Grupo:
         if estudiantes is None:
             self.listadoAlumnos=[]
 
-    def agregarAlumno(self, alumno, lista=[]):
-        if(lista is None):
+    def listadoAsignaturas(self, **kwargs):
+        for x in kwargs.values():
+            self._asignaturas.append(Asignatura(x))
+
+    def agregarAlumno(self, alumno, lista=None)
             lista.append(alumno)
             self.listadoAlumnos = self.listadoAlumnos + lista
         else:
